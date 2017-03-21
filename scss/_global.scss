@@ -1,0 +1,46 @@
+// Body badding for the fixed navbar and sidebar
+body {
+    padding-top: 54px;
+    padding-left: 0;
+    @media (min-width: 992px) {
+        padding-top: 56px;
+        padding-left: 250px;
+    }
+}
+
+// Custom class for the background icon in card blocks
+.card-block-icon {
+    font-size: 5rem;
+    position: absolute;
+    right: -25px;
+    top: -25px;
+    @include rotate;
+    z-index: 0;
+}
+
+// Override breakpoints for card columns to work well with sidebar
+.card-columns {
+    @media (min-width: 576px) {
+        column-count: 1;
+    }
+    @media (min-width: 768px) {
+        column-count: 2;
+    }
+    @media (min-width: 1200px) {
+        column-count: 3;
+    }
+}
+
+// Helper class for the overflow property
+.o-hidden {
+    overflow: hidden !important;
+}
+
+// Helper classes for z-index
+.z-0 {
+    z-index: 0;
+}
+
+.z-1 {
+    z-index: 1;
+}

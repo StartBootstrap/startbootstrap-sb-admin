@@ -1,0 +1,145 @@
+.navbar-inverse {
+    input.form-control {
+        border-color: $gray-lighter;
+    }
+}
+
+#mainNav {
+    .navbar-collapse {
+        max-height: 75vh;
+        overflow: auto;
+        .navbar-nav.sidebar-nav {
+            .nav-link-collapse:after {
+                font-family: 'FontAwesome';
+                content: "\f107";
+                float: right;
+                color: $gray;
+            }
+            .nav-link-collapse.collapsed:after {
+                content: "\f105";
+            }
+            .sidebar-second-level,
+            .sidebar-third-level {
+                padding-left: 0;
+                > li > a {
+                    color: $gray-light;
+                    display: block;
+                    padding: .5em 0;
+                    &:focus,
+                    &:hover {
+                        color: $gray-lighter;
+                        text-decoration: none;
+                    }
+                }
+            }
+            .sidebar-second-level > li > a {
+                padding-left: 1em;
+            }
+            .sidebar-third-level > li > a {
+                padding-left: 2em;
+            }
+        }
+        .navbar-nav > .nav-item.dropdown {
+            > .nav-link {
+                min-width: 45px;
+                position: relative;
+                &:after {
+                    font-family: 'FontAwesome';
+                    content: "\f105";
+                    float: right;
+                    color: $gray;
+                    border: none;
+                    width: auto;
+                }
+                .new-indicator {
+                    position: absolute;
+                    top: 0;
+                    right: 25px;
+                    font-size: 1.1rem;
+                    .number {
+                        position: absolute;
+                        color: white;
+                        width: 22.625px;
+                        text-align: center;
+                        left: 0;
+                        top: 6px;
+                        font-size: .5rem;
+                    }
+                }
+            }
+            &.show > .nav-link:after {
+                content: "\f107";
+            }
+            .dropdown-menu > .dropdown-item > .dropdown-message {
+                max-width: none;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+    @media (min-width: 992px) {
+        .navbar-brand {
+            width: 250px;
+        }
+        .navbar-collapse {
+            max-height: none;
+            overflow: visible;
+            .navbar-nav.sidebar-nav {
+                position: absolute;
+                left: 0;
+                top: 0;
+                margin-top: 56px;
+                height: 100vh;
+                background: $gray-darker;
+                -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                > .nav-item {
+                    padding: 0;
+                    width: 250px;
+                    > .nav-link {
+                        padding: 1em
+                    }
+                    .sidebar-second-level,
+                    .sidebar-third-level {
+                        background: $gray-dark;
+                        list-style: none;
+                        padding-left: 0;
+                        > li {
+                            width: 250px;
+                            > a {
+                                padding: 1em;
+                            }
+                        }
+                    }
+                    .sidebar-second-level > li > a {
+                        padding-left: 2em;
+                    }
+                    .sidebar-third-level > li > a {
+                        padding-left: 3em;
+                    }
+                }
+                li.active a {
+                    color: white;
+                    background-color: $gray;
+                    &:hover,
+                    &:focus {
+                        color: white;
+                    }
+                }
+            }
+            .navbar-nav > .nav-item.dropdown {
+                > .nav-link {
+                    min-width: 0;
+                    &:after {
+                        width: 24px;
+                        text-align: center;
+                    }
+                }
+                .dropdown-menu > .dropdown-item > .dropdown-message {
+                    max-width: 300px;
+                }
+            }
+        }
+    }
+}
