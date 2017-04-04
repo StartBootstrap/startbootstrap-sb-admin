@@ -20,6 +20,28 @@ body {
 .z-1 {
   z-index: 1; }
 
+.card-block-icon {
+  font-size: 5rem;
+  position: absolute;
+  right: -25px;
+  top: -25px;
+  -ms-transform: rotate(15deg);
+  -webkit-transform: rotate(15deg);
+  transform: rotate(15deg);
+  z-index: 0; }
+
+@media (min-width: 576px) {
+  .card-columns {
+    column-count: 1; } }
+
+@media (min-width: 768px) {
+  .card-columns {
+    column-count: 2; } }
+
+@media (min-width: 1200px) {
+  .card-columns {
+    column-count: 3; } }
+
 .navbar-inverse input.form-control {
   border-color: #eeeeee; }
 
