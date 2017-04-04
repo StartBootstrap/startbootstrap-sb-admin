@@ -1,7 +1,7 @@
 /*!
  * Start Bootstrap - SB Admin v4.0.0-alpha (http://startbootstrap.com/template-overviews/sb-admin)
  * Copyright 2013-2017 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-sb-admin/blob/master/LICENSE)
  */
 body {
   padding-top: 54px;
@@ -10,28 +10,6 @@ body {
     body {
       padding-top: 56px;
       padding-left: 250px; } }
-
-.card-block-icon {
-  font-size: 5rem;
-  position: absolute;
-  right: -25px;
-  top: -25px;
-  -ms-transform: rotate(15deg);
-  -webkit-transform: rotate(15deg);
-  transform: rotate(15deg);
-  z-index: 0; }
-
-@media (min-width: 576px) {
-  .card-columns {
-    column-count: 1; } }
-
-@media (min-width: 768px) {
-  .card-columns {
-    column-count: 2; } }
-
-@media (min-width: 1200px) {
-  .card-columns {
-    column-count: 3; } }
 
 .o-hidden {
   overflow: hidden !important; }

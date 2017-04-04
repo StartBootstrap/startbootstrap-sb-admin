@@ -1,0 +1,23 @@
+// Styling for custom cards
+// Custom class for the background icon in card blocks
+.card-block-icon {
+    font-size: 5rem;
+    position: absolute;
+    right: -25px;
+    top: -25px;
+    @include rotate;
+    z-index: 0;
+}
+
+// Override breakpoints for card columns to work well with sidebar
+.card-columns {
+    @media (min-width: 576px) {
+        column-count: 1;
+    }
+    @media (min-width: 768px) {
+        column-count: 2;
+    }
+    @media (min-width: 1200px) {
+        column-count: 3;
+    }
+}
