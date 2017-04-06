@@ -1,3 +1,4 @@
+// Scroll to top button
 $(document).scroll(function() {
     var scrollDistance = $(this).scrollTop();
     if (scrollDistance > 100) {
@@ -5,6 +6,11 @@ $(document).scroll(function() {
     } else {
         $('.scroll-to-top').fadeOut();
     }
+});
+
+// dataTables Example with BS4
+$(document).ready(function() {
+    $('#dataTable').DataTable();
 });
 
 // Chart.js Examples

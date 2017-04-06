@@ -75,6 +75,13 @@ gulp.task('copy', function() {
     gulp.src(['node_modules/chart.js/dist/*.js'])
         .pipe(gulp.dest('vendor/chart.js'))
 
+    gulp.src([
+            'node_modules/datatables.net/js/*.js',
+            'node_modules/datatables.net-bs4/js/*.js',
+            'node_modules/datatables.net-bs4/css/*.css'
+        ])
+        .pipe(gulp.dest('vendor/datatables/'))
+
 })
 
 // Default task
