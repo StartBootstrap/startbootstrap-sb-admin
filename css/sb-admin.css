@@ -11,6 +11,9 @@ body {
       padding-top: 56px;
       padding-left: 250px; } }
 
+.smaller {
+  font-size: 0.7rem; }
+
 .o-hidden {
   overflow: hidden !important; }
 
@@ -40,7 +43,7 @@ body {
 
 @media (min-width: 1200px) {
   .card-columns {
-    column-count: 3; } }
+    column-count: 2; } }
 
 .navbar-inverse input.form-control {
   border-color: #eeeeee; }

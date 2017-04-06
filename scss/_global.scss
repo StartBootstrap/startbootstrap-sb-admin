@@ -9,6 +9,11 @@ body {
     }
 }
 
+// Additional Text Helper Class
+.smaller {
+	font-size: 0.7rem;
+}
+
 // Helper class for the overflow property
 .o-hidden {
     overflow: hidden !important;

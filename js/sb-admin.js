@@ -1,10 +1,11 @@
-// SB Admin JS
+// Chart.js Examples
 
-// Set new default font family and font color to mimic Bootstrap's default styling
+// -- Set new default font family and font color to mimic Bootstrap's default styling
 Chart.defaults.global.defaultFontFamily = '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
 Chart.defaults.global.defaultFontColor = '#292b2c';
 
-var ctx = document.getElementById("myChart");
+// -- Area Chart Example
+var ctx = document.getElementById("myAreaChart");
 var myLineChart = new Chart(ctx, {
     type: 'line',
     data: {
@@ -28,13 +29,13 @@ var myLineChart = new Chart(ctx, {
         scales: {
             xAxes: [{
                 time: {
-                    unit: 'month'
+                    unit: 'date'
                 },
                 gridLines: {
-                	display: false
+                    display: false
                 },
                 ticks: {
-                	maxTicksLimit: 7
+                    maxTicksLimit: 7
                 }
             }],
             yAxes: [{
@@ -44,7 +45,52 @@ var myLineChart = new Chart(ctx, {
                     maxTicksLimit: 5
                 },
                 gridLines: {
-                	color: "rgba(0, 0, 0, .125)",
+                    color: "rgba(0, 0, 0, .125)",
+                }
+            }],
+        },
+        legend: {
+            display: false
+        }
+    }
+});
+
+// -- Bar Chart Example
+
+// -- Area Chart Example
+var ctx = document.getElementById("myBarChart");
+var myLineChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ["January", "February", "March", "April", "May", "June"],
+        datasets: [{
+            label: "Revenue",
+            backgroundColor: "rgba(2,117,216,1)",
+            borderColor: "rgba(2,117,216,1)",
+            data: [5412, 5312, 5846, 6125, 5971, 6025],
+        }],
+    },
+    options: {
+        scales: {
+            xAxes: [{
+                time: {
+                    unit: 'month'
+                },
+                gridLines: {
+                    display: false
+                },
+                ticks: {
+                    maxTicksLimit: 6
+                }
+            }],
+            yAxes: [{
+                ticks: {
+                    min: 0,
+                    max: 8000,
+                    maxTicksLimit: 5
+                },
+                gridLines: {
+                    display: true
                 }
             }],
         },
