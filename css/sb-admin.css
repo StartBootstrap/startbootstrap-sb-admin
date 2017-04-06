@@ -18,6 +18,22 @@ body.fixed-nav {
     .content-wrapper {
       margin-left: 250px; } }
 
+.scroll-to-top {
+  display: none;
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  height: 50px;
+  width: 50px;
+  color: white;
+  text-align: center;
+  line-height: 45px;
+  background: rgba(41, 43, 44, 0.5); }
+  .scroll-to-top:hover, .scroll-to-top:focus {
+    color: white; }
+  .scroll-to-top:hover {
+    background: #292b2c; }
+
 .smaller {
   font-size: 0.7rem; }
 

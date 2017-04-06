@@ -1,3 +1,12 @@
+$(document).scroll(function() {
+    var scrollDistance = $(this).scrollTop();
+    if (scrollDistance > 100) {
+        $('.scroll-to-top').fadeIn();
+    } else {
+        $('.scroll-to-top').fadeOut();
+    }
+});
+
 // Chart.js Examples
 
 // -- Set new default font family and font color to mimic Bootstrap's default styling
