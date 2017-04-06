@@ -90,11 +90,13 @@
                 left: 0;
                 top: 0;
                 margin-top: 56px;
+                padding-bottom: 56px;
                 height: 100vh;
-                background: $gray-darker;
+                background: $gray-dark;
                 -webkit-flex-direction: column;
                 -ms-flex-direction: column;
                 flex-direction: column;
+                overflow: auto;
                 > .nav-item {
                     padding: 0;
                     width: 250px;
