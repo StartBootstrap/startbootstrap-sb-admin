@@ -4,12 +4,19 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-sb-admin/blob/master/LICENSE)
  */
 body {
-  padding-top: 54px;
-  padding-left: 0; }
+  background: #292b2c; }
+
+body.fixed-nav {
+  padding-top: 54px; }
   @media (min-width: 992px) {
-    body {
-      padding-top: 56px;
-      padding-left: 250px; } }
+    body.fixed-nav {
+      padding-top: 56px; } }
+
+.content-wrapper {
+  background: white; }
+  @media (min-width: 992px) {
+    .content-wrapper {
+      margin-left: 250px; } }
 
 .smaller {
   font-size: 0.7rem; }

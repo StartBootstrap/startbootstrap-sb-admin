@@ -1,17 +1,26 @@
 // Global styling for this template
 // Body padding for the fixed navbar and sidebar
 body {
+    background: $gray-dark;
+}
+
+body.fixed-nav {
     padding-top: 54px;
-    padding-left: 0;
     @media (min-width: 992px) {
         padding-top: 56px;
-        padding-left: 250px;
+    }
+}
+
+.content-wrapper {
+    background: white;
+    @media (min-width: 992px) {
+        margin-left: 250px;
     }
 }
 
 // Additional Text Helper Class
 .smaller {
-	font-size: 0.7rem;
+    font-size: 0.7rem;
 }
 
 // Helper class for the overflow property
