@@ -3,10 +3,10 @@
 .card-block-icon {
     font-size: 5rem;
     position: absolute;
-    right: -25px;
-    top: -25px;
-    @include rotate;
     z-index: 0;
+    top: -25px;
+    right: -25px;
+    @include rotate;
 }
 
 // Override breakpoints for card columns to work well with sidebar

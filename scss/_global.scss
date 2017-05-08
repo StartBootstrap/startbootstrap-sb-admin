@@ -20,16 +20,16 @@ body.fixed-nav {
 
 // Scroll to top button
 .scroll-to-top {
-    display: none;
+    line-height: 45px;
     position: fixed;
     right: 15px;
     bottom: 15px;
-    height: 50px;
+    display: none;
     width: 50px;
-    color: white;
+    height: 50px;
     text-align: center;
-    line-height: 45px;
-    background: fade-out($gray-dark, 0.5);
+    color: white;
+    background: fade-out($gray-dark, .5);
     &:hover,
     &:focus {
         color: white;
@@ -41,7 +41,7 @@ body.fixed-nav {
 
 // Additional Text Helper Class
 .smaller {
-    font-size: 0.7rem;
+    font-size: .7rem;
 }
 
 // Helper class for the overflow property

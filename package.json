@@ -30,15 +30,16 @@
     "dependencies": {
         "bootstrap": "^4.0.0-alpha.6",
         "chart.js": "^2.5.0",
-        "datatables.net-bs4": "^1.10.13",
+        "datatables.net-bs4": "1.10.15",
         "font-awesome": "4.7.0",
         "jquery": "^3.2.1",
+        "jquery.easing": "^1.4.1",
         "tether": "^1.4.0"
     },
     "devDependencies": {
         "browser-sync": "^2.18.8",
         "gulp": "^3.9.1",
-        "gulp-clean-css": "^3.0.4",
+        "gulp-clean-css": "3.2.0",
         "gulp-header": "1.8.8",
         "gulp-rename": "^1.2.2",
         "gulp-sass": "^3.1.0",

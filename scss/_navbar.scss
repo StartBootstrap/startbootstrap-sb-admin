@@ -7,29 +7,29 @@
 
 #mainNav {
     .navbar-collapse {
-        max-height: 75vh;
         overflow: auto;
+        max-height: 75vh;
         .navbar-nav.sidebar-nav {
             .nav-link-collapse:after {
                 font-family: 'FontAwesome';
-                content: "\f107";
                 float: right;
+                content: '\f107';
                 color: $gray;
             }
             .nav-link-collapse.collapsed:after {
-                content: "\f105";
+                content: '\f105';
             }
             .sidebar-second-level,
             .sidebar-third-level {
                 padding-left: 0;
                 > li > a {
-                    color: $gray-light;
                     display: block;
                     padding: .5em 0;
+                    color: $gray-light;
                     &:focus,
                     &:hover {
-                        color: $gray-lighter;
                         text-decoration: none;
+                        color: $gray-lighter;
                     }
                 }
             }
@@ -42,38 +42,38 @@
         }
         .navbar-nav > .nav-item.dropdown {
             > .nav-link {
-                min-width: 45px;
                 position: relative;
+                min-width: 45px;
                 &:after {
                     font-family: 'FontAwesome';
-                    content: "\f105";
                     float: right;
+                    width: auto;
+                    content: '\f105';
                     color: $gray;
                     border: none;
-                    width: auto;
                 }
                 .new-indicator {
+                    font-size: 1.1rem;
                     position: absolute;
                     top: 0;
                     right: 25px;
-                    font-size: 1.1rem;
                     .number {
+                        font-size: .5rem;
                         position: absolute;
-                        color: white;
+                        top: 6px;
+                        left: 0;
                         width: 22.625px;
                         text-align: center;
-                        left: 0;
-                        top: 6px;
-                        font-size: .5rem;
+                        color: white;
                     }
                 }
             }
             &.show > .nav-link:after {
-                content: "\f107";
+                content: '\f107';
             }
             .dropdown-menu > .dropdown-item > .dropdown-message {
-                max-width: none;
                 overflow: hidden;
+                max-width: none;
                 text-overflow: ellipsis;
             }
         }
@@ -83,31 +83,31 @@
             width: 250px;
         }
         .navbar-collapse {
-            max-height: none;
             overflow: visible;
+            max-height: none;
             .navbar-nav.sidebar-nav {
                 position: absolute;
-                left: 0;
                 top: 0;
+                left: 0;
+                overflow: auto;
+                flex-direction: column;
+                height: 100vh;
                 margin-top: 56px;
                 padding-bottom: 56px;
-                height: 100vh;
                 background: $gray-dark;
                 -webkit-flex-direction: column;
                 -ms-flex-direction: column;
-                flex-direction: column;
-                overflow: auto;
                 > .nav-item {
-                    padding: 0;
                     width: 250px;
+                    padding: 0;
                     > .nav-link {
-                        padding: 1em
+                        padding: 1em;
                     }
                     .sidebar-second-level,
                     .sidebar-third-level {
-                        background: $gray-dark;
-                        list-style: none;
                         padding-left: 0;
+                        list-style: none;
+                        background: $gray-dark;
                         > li {
                             width: 250px;
                             > a {

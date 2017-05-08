@@ -62,6 +62,9 @@ gulp.task('copy', function() {
     gulp.src(['node_modules/tether/dist/js/*.js'])
         .pipe(gulp.dest('vendor/tether'))
 
+    gulp.src(['node_modules/jquery.easing/*.js'])
+        .pipe(gulp.dest('vendor/jquery-easing'))
+
     gulp.src([
             'node_modules/font-awesome/**',
             '!node_modules/font-awesome/**/*.map',
@@ -81,7 +84,6 @@ gulp.task('copy', function() {
             'node_modules/datatables.net-bs4/css/*.css'
         ])
         .pipe(gulp.dest('vendor/datatables/'))
-
 })
 
 // Default task
