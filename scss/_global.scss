@@ -1,59 +1,40 @@
 // Global styling for this template
-// Body padding for the fixed navbar and sidebar
 body {
-    background: $gray-dark;
+  background: $gray-800;
 }
 
 body.fixed-nav {
-    padding-top: 54px;
-    @media (min-width: 992px) {
-        padding-top: 56px;
-    }
-}
-
-.content-wrapper {
-    background: white;
-    @media (min-width: 992px) {
-        margin-left: 250px;
-    }
+  padding-top: 54px;
+  @media (min-width: 992px) {
+    padding-top: 56px;
+  }
 }
 
 // Scroll to top button
 .scroll-to-top {
-    line-height: 45px;
-    position: fixed;
-    right: 15px;
-    bottom: 15px;
-    display: none;
-    width: 50px;
-    height: 50px;
-    text-align: center;
+  position: fixed;
+  right: 15px;
+  bottom: 3px;
+
+  display: none;
+
+  width: 50px;
+  height: 50px;
+
+  text-align: center;
+
+  color: white;
+  background: fade-out($gray-800, .5);
+
+  line-height: 45px;
+  &:focus,
+  &:hover {
     color: white;
-    background: fade-out($gray-dark, .5);
-    &:hover,
-    &:focus {
-        color: white;
-    }
-    &:hover {
-        background: $gray-dark;
-    }
-}
-
-// Additional Text Helper Class
-.smaller {
-    font-size: .7rem;
-}
-
-// Helper class for the overflow property
-.o-hidden {
-    overflow: hidden !important;
-}
-
-// Helper classes for z-index
-.z-0 {
-    z-index: 0;
-}
-
-.z-1 {
-    z-index: 1;
+  }
+  &:hover {
+    background: $gray-800;
+  }
+  i {
+    font-weight: 800;
+  }
 }
