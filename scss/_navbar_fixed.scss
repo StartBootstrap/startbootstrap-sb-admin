@@ -1,0 +1,57 @@
+#mainNav.fixed-top {
+  .sidenav-toggler {
+    display: none;
+  }
+  @media (min-width: 992px) {
+    .navbar-sidenav {
+      height: calc(100vh - 112px);
+    }
+    .sidenav-toggler {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      display: flex;
+      overflow-x: hidden;
+      overflow-y: auto;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+
+      margin-top: calc(100vh - 56px);
+
+      background-color: $gray-900;
+      > .nav-item {
+        width: $sidenav-base-width;
+        padding: 0;
+        > .nav-link {
+          padding: 1em;
+        }
+      }
+    }
+  }
+}
+
+body.sidenav-toggled {
+  #mainNav.fixed-top {
+    .sidenav-toggler {
+      overflow-x: hidden;
+
+      width: $sidenav-collapsed-width;
+      .nav-item,
+      .nav-link {
+        width: $sidenav-collapsed-width !important;
+      }
+    }
+    #sidenavToggler {
+      i {
+        -webkit-transform: scaleX(-1);
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter:  'FlipH';
+      }
+    }
+  }
+}

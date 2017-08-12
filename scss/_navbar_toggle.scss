@@ -1,0 +1,45 @@
+.content-wrapper {
+  overflow-x: hidden;
+
+  background: white;
+  @media (min-width: 992px) {
+    margin-left: $sidenav-base-width;
+  }
+}
+
+// Toggling the Sidenav
+#sidenavToggler {
+  i {
+    font-weight: 800;
+  }
+}
+
+.navbar-sidenav-tooltip.show {
+  display: none;
+}
+
+body.sidenav-toggled {
+  .content-wrapper {
+    @media (min-width: 992px) {
+      margin-left: $sidenav-collapsed-width;
+    }
+  }
+  .navbar-sidenav {
+    overflow-x: hidden;
+
+    width: $sidenav-collapsed-width;
+    .nav-link-text {
+      display: none;
+    }
+    .nav-item,
+    .nav-link {
+      width: $sidenav-collapsed-width !important;
+      &:after {
+        display: none;
+      }
+    }
+  }
+  .navbar-sidenav-tooltip.show {
+    display: flex;
+  }
+}
