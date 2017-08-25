@@ -20,12 +20,31 @@
 
       margin-top: calc(100vh - 56px);
 
-      background-color: $gray-900;
       > .nav-item {
         width: $sidenav-base-width;
         padding: 0;
         > .nav-link {
           padding: 1em;
+        }
+      }
+    }
+  }
+  &.navbar-dark {
+    .sidenav-toggler {
+      background-color: $gray-900;
+      a {
+        i {
+          color: $gray-500;;
+        }
+      }
+    }
+  }
+  &.navbar-light {
+    .sidenav-toggler {
+      background-color: $gray-300;
+      a {
+        i {
+          color: fade-out($black, 0.5);
         }
       }
     }
