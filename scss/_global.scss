@@ -1,10 +1,24 @@
 // Global styling for this template
 
-body.fixed-nav {
-  padding-top: 54px;
-  @media (min-width: 992px) {
-    padding-top: 56px;
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body.sticky-footer {
+  margin-bottom: 56px;
+  .content-wrapper {
+    min-height: calc(100vh - 56px - 56px);
   }
+}
+
+body.fixed-nav {
+  padding-top: 56px;
+}
+
+.content-wrapper {
+  min-height: calc(100vh - 56px);
+  padding-top: 1rem;
 }
 
 // Scroll to top button

@@ -3,11 +3,21 @@
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-sb-admin/blob/master/LICENSE)
  */
+html {
+  position: relative;
+  min-height: 100%; }
+
+body.sticky-footer {
+  margin-bottom: 56px; }
+  body.sticky-footer .content-wrapper {
+    min-height: calc(100vh - 56px - 56px); }
+
 body.fixed-nav {
-  padding-top: 54px; }
-  @media (min-width: 992px) {
-    body.fixed-nav {
-      padding-top: 56px; } }
+  padding-top: 56px; }
+
+.content-wrapper {
+  min-height: calc(100vh - 56px);
+  padding-top: 1rem; }
 
 .scroll-to-top {
   position: fixed;
@@ -275,8 +285,6 @@ body.sidenav-toggled #mainNav.fixed-top #sidenavToggler i {
   display: none; }
 
 @media (min-width: 992px) {
-  #mainNav.static-top .navbar-sidenav {
-    min-height: 100vh; }
   #mainNav.static-top .sidenav-toggler {
     display: flex; } }
 
@@ -325,3 +333,19 @@ body.sidenav-toggled .navbar-sidenav-tooltip.show {
 
 .card-register {
   max-width: 40rem; }
+
+footer.sticky-footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 56px;
+  background-color: #e9ecef;
+  line-height: 55px; }
+  @media (min-width: 992px) {
+    footer.sticky-footer {
+      width: calc(100% - 250px); } }
+
+@media (min-width: 992px) {
+  body.sidenav-toggled footer.sticky-footer {
+    width: calc(100% - 55px); } }
