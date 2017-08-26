@@ -1,0 +1,23 @@
+footer.sticky-footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 56px;
+
+  background-color: $gray-200;
+
+  line-height: 55px;
+  @media (min-width: 992px) {
+    width: calc(100% - #{$sidenav-base-width});
+  }
+}
+
+body.sidenav-toggled {
+  @media (min-width: 992px) {
+    footer.sticky-footer {
+      width: calc(100% - #{$sidenav-collapsed-width});
+    }
+  }
+}
