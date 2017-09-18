@@ -1,0 +1,13 @@
+// Logout Modal
+#exampleModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+  .modal-dialog(role='document')
+    .modal-content
+      .modal-header
+        h5#exampleModalLabel.modal-title Ready to Leave?
+        button.close(type='button', data-dismiss='modal', aria-label='Close')
+          span(aria-hidden='true') ×
+      .modal-body
+        | Select "Logout" below if you are ready to end your current session.
+      .modal-footer
+        button.btn.btn-secondary(type='button', data-dismiss='modal') Cancel
+        a.btn.btn-primary(href='login.html') Logout

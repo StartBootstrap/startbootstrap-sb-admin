@@ -1,0 +1,48 @@
+doctype html
+html(lang='en')
+
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name='description', content='')
+    meta(name='author', content='')
+
+    title SB Admin - Start Bootstrap Template
+
+    include includes/css/core.pug
+
+    include includes/css/custom.pug
+
+  body.bg-dark
+    .container
+      .card.card-register.mx-auto.mt-5
+        .card-header
+          | Register an Account
+        .card-body
+          form
+            .form-group
+              .form-row
+                .col-md-6
+                  label(for='exampleInputName') First name
+                  input#exampleInputName.form-control(type='text', aria-describedby='nameHelp', placeholder='Enter first name')
+                .col-md-6
+                  label(for='exampleInputLastName') Last name
+                  input#exampleInputLastName.form-control(type='text', aria-describedby='nameHelp', placeholder='Enter last name')
+            .form-group
+              label(for='exampleInputEmail1') Email address
+              input#exampleInputEmail1.form-control(type='email', aria-describedby='emailHelp', placeholder='Enter email')
+            .form-group
+              .form-row
+                .col-md-6
+                  label(for='exampleInputPassword1') Password
+                  input#exampleInputPassword1.form-control(type='password', placeholder='Password')
+                .col-md-6
+                  label(for='exampleConfirmPassword') Confirm password
+                  input#exampleConfirmPassword.form-control(type='password', placeholder='Confirm password')
+            a.btn.btn-primary.btn-block(href='login.html') Register
+          .text-center
+            a.d-block.small.mt-3(href='login.html') Login Page
+            a.d-block.small(href='forgot-password.html') Forgot Password?
+
+    include includes/js/core.pug

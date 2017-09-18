@@ -1,0 +1,86 @@
+doctype html
+html(lang='en')
+
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name='description', content='')
+    meta(name='author', content='')
+
+    title SB Admin - Start Bootstrap Template
+
+    include includes/css/core.pug
+
+    include includes/css/custom.pug
+
+  body#page-top.fixed-nav.sticky-footer.bg-dark
+    include includes/navbar.pug
+    .content-wrapper
+      .container-fluid
+        // Breadcrumbs
+        ol.breadcrumb
+          li.breadcrumb-item
+            a(href='#') Dashboard
+          li.breadcrumb-item.active Cards
+        h1 Cards
+        hr
+        // Icon Cards
+        .row
+          .col-xl-3.col-sm-6.mb-3
+            .card.text-white.bg-primary.o-hidden.h-100
+              .card-body
+                .card-body-icon
+                  i.fa.fa-fw.fa-comments
+                .mr-5
+                  | 26 New Messages!
+              a.card-footer.text-white.clearfix.small.z-1(href='#')
+                span.float-left View Details
+                span.float-right
+                  i.fa.fa-angle-right
+          .col-xl-3.col-sm-6.mb-3
+            .card.text-white.bg-warning.o-hidden.h-100
+              .card-body
+                .card-body-icon
+                  i.fa.fa-fw.fa-list
+                .mr-5
+                  | 11 New Tasks!
+              a.card-footer.text-white.clearfix.small.z-1(href='#')
+                span.float-left View Details
+                span.float-right
+                  i.fa.fa-angle-right
+          .col-xl-3.col-sm-6.mb-3
+            .card.text-white.bg-success.o-hidden.h-100
+              .card-body
+                .card-body-icon
+                  i.fa.fa-fw.fa-shopping-cart
+                .mr-5
+                  | 123 New Orders!
+              a.card-footer.text-white.clearfix.small.z-1(href='#')
+                span.float-left View Details
+                span.float-right
+                  i.fa.fa-angle-right
+          .col-xl-3.col-sm-6.mb-3
+            .card.text-white.bg-danger.o-hidden.h-100
+              .card-body
+                .card-body-icon
+                  i.fa.fa-fw.fa-support
+                .mr-5
+                  | 13 New Tickets!
+              a.card-footer.text-white.clearfix.small.z-1(href='#')
+                span.float-left View Details
+                span.float-right
+                  i.fa.fa-angle-right
+
+      // /.container-fluid
+      // /.content-wrapper
+
+      include includes/footer.pug
+
+      include includes/scroll-to-top.pug
+
+      include includes/modals/logout.pug
+
+      include includes/js/core.pug
+
+      include includes/js/custom.pug

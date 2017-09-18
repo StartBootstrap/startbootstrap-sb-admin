@@ -1,0 +1,115 @@
+// Color support for .navbar-dark
+
+#mainNav.navbar-dark {
+  .navbar-collapse {
+    .navbar-sidenav {
+      .nav-link-collapse:after {
+        color: $gray-600;
+      }
+      > .nav-item {
+        > .nav-link {
+          color: $gray-600;
+          &:hover {
+            color: $gray-500;
+          }
+        }
+        .sidenav-second-level,
+        .sidenav-third-level {
+          > li > a {
+            color: $gray-600;
+            &:focus,
+            &:hover {
+              color: $gray-500;
+            }
+          }
+        }
+      }
+    }
+    .navbar-nav > .nav-item.dropdown > .nav-link:after {
+      color: $gray-500;
+    }
+  }
+  @media (min-width: 992px) {
+    .navbar-collapse {
+      .navbar-sidenav {
+        background: $gray-800;
+        li {
+          &.active {
+            a {
+              color: white !important;
+              background-color: $gray-700;
+              &:focus,
+              &:hover {
+                color: white;
+              }
+            }
+          }
+        }
+        > .nav-item {
+          .sidenav-second-level,
+          .sidenav-third-level {
+            background: $gray-800;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Color support for .navbar-light
+
+#mainNav.navbar-light {
+  .navbar-collapse {
+    .navbar-sidenav {
+      .nav-link-collapse:after {
+        color: fade-out($black, 0.5);
+      }
+      > .nav-item {
+        > .nav-link {
+          color: fade-out($black, 0.5);
+          &:hover {
+            color: fade-out($black, 0.3);
+          }
+        }
+        .sidenav-second-level,
+        .sidenav-third-level {
+          > li > a {
+            color: fade-out($black, 0.5);
+            &:focus,
+            &:hover {
+              color: fade-out($black, 0.3);
+            }
+          }
+        }
+      }
+    }
+    .navbar-nav > .nav-item.dropdown > .nav-link:after {
+      color: fade-out($black, 0.5);
+    }
+  }
+  @media (min-width: 992px) {
+    .navbar-collapse {
+      .navbar-sidenav {
+        background: $gray-100;
+        li {
+          &.active {
+            a {
+              color: $black !important;
+              background-color: $gray-200;
+              &:focus,
+              &:hover {
+                color: $black;
+              }
+            }
+          }
+        }
+        > .nav-item {
+          .sidenav-second-level,
+          .sidenav-third-level {
+            background: $gray-100;
+          }
+        }
+      }
+    }
+  }
+}
