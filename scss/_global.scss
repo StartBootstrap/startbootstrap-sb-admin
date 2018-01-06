@@ -10,18 +10,18 @@ body {
 }
 
 body.sticky-footer {
-  margin-bottom: 56px;
+  margin-bottom: $sticky-footer-height;
   .content-wrapper {
-    min-height: calc(100vh - 56px - 56px);
+    min-height: calc(100vh - #{$sticky-footer-height} - #{$navbar-base-height});
   }
 }
 
 body.fixed-nav {
-  padding-top: 56px;
+  padding-top: $navbar-base-height;
 }
 
 .content-wrapper {
-  min-height: calc(100vh - 56px);
+  min-height: calc(100vh - #{$sticky-footer-height});
   padding-top: 1rem;
 }
 
