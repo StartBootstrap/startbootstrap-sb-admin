@@ -155,8 +155,6 @@ body.fixed-nav {
     position: absolute;
     top: 0;
     left: 0;
-    overflow-x: hidden;
-    overflow-y: auto;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
@@ -213,8 +211,6 @@ body.fixed-nav {
     top: 0;
     left: 0;
     display: flex;
-    overflow-x: hidden;
-    overflow-y: auto;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
@@ -309,7 +305,6 @@ body.sidenav-toggled #mainNav.static-top #sidenavToggler i {
 }
 
 body.sidenav-toggled .navbar-sidenav {
-  overflow-x: hidden;
   width: 55px;
 }
 
@@ -332,7 +327,7 @@ body.sidenav-toggled .navbar-sidenav .nav-item {
 }
 
 body.sidenav-toggled .navbar-sidenav-tooltip.show {
-  display: none;
+  display: flex;
 }
 
 #mainNav.navbar-dark .navbar-collapse .navbar-sidenav .nav-link-collapse:after {
