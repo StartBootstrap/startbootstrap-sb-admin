@@ -38,8 +38,11 @@ body.sidenav-toggled {
         display: none;
       }
     }
+    .nav-item {
+      white-space: nowrap;
+    }
   }
   .navbar-sidenav-tooltip.show {
-    display: flex;
+    display: none;
   }
 }
