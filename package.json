@@ -28,15 +28,16 @@
         "url": "https://github.com/BlackrockDigital/startbootstrap-sb-admin.git"
     },
     "dependencies": {
-        "bootstrap": "4.0.0",
-        "chart.js": "2.7.1",
+        "bootstrap": "^4.1.0",
+        "chart.js": "2.7.2",
         "datatables.net-bs4": "1.10.16",
         "font-awesome": "4.7.0",
         "jquery": "3.3.1",
-        "jquery.easing": "^1.4.1"
+        "jquery.easing": "^1.4.1",
+        "popper.js": "^1.14.3"
     },
     "devDependencies": {
-        "browser-sync": "2.23.6",
+        "browser-sync": "^2.24.5",
         "gulp": "^3.9.1",
         "gulp-clean-css": "3.9.2",
         "gulp-header": "2.0.1",
