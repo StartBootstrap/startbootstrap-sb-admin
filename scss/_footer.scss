@@ -1,23 +1,27 @@
 footer.sticky-footer {
+  display: flex;
   position: absolute;
   right: 0;
   bottom: 0;
-
-  width: 100%;
+  width: calc(100% - #{$sidebar-collapsed-width});
   height: $sticky-footer-height;
-
   background-color: $gray-200;
-
-  line-height: 55px;
-  @media (min-width: 992px) {
-    width: calc(100% - #{$sidenav-base-width});
+  .copyright {
+    line-height: 1;
+    font-size: 0.8rem;
+  }
+  @media (min-width: 768px) {
+    width: calc(100% - #{$sidebar-base-width});
   }
 }
 
-body.sidenav-toggled {
-  @media (min-width: 992px) {
+body.sidebar-toggled {
+  footer.sticky-footer {
+    width: 100%;
+  }
+  @media (min-width: 768px) {
     footer.sticky-footer {
-      width: calc(100% - #{$sidenav-collapsed-width});
+      width: calc(100% - #{$sidebar-collapsed-width});
     }
   }
 }
