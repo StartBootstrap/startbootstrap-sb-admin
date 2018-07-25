@@ -6,42 +6,53 @@ html {
 }
 
 body {
-  overflow-x: hidden;
+  height: 100%;
 }
 
-body.sticky-footer {
-  margin-bottom: $sticky-footer-height;
-  .content-wrapper {
-    min-height: calc(100vh - #{$sticky-footer-height} - #{$navbar-base-height});
+#wrapper {
+  display: flex;
+  #content-wrapper {
+    overflow-x: hidden;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: $sticky-footer-height;
   }
 }
-
+// Fixed Nav Option
 body.fixed-nav {
-  padding-top: $navbar-base-height;
-}
-
-.content-wrapper {
-  min-height: calc(100vh - #{$sticky-footer-height});
-  padding-top: 1rem;
+  #content-wrapper {
+    margin-top: $navbar-base-height;
+    padding-left: $sidebar-collapsed-width;
+  }
+  &.sidebar-toggled {
+    #content-wrapper {
+      padding-left: 0;
+    }
+  }
+  @media(min-width: 768px) {
+    #content-wrapper {
+      padding-left: $sidebar-base-width;
+    }
+    &.sidebar-toggled {
+      #content-wrapper {
+        padding-left: $sidebar-collapsed-width;
+      }
+    }
+  }
 }
 
 // Scroll to top button
 .scroll-to-top {
   position: fixed;
   right: 15px;
-  bottom: 3px;
-
+  bottom: 15px;
   display: none;
-
   width: 50px;
   height: 50px;
-
   text-align: center;
-
-  color: white;
+  color: $white;
   background: fade-out($gray-800, .5);
-
-  line-height: 45px;
+  line-height: 46px;
   &:focus,
   &:hover {
     color: white;

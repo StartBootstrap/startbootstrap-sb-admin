@@ -3,14 +3,15 @@
 .card-body-icon {
   position: absolute;
   z-index: 0;
-  top: -25px;
-  right: -25px;
+  top: -1.25rem;
+  right: -1rem;
+  opacity: 0.4;
 
   font-size: 5rem;
   @include rotate;
 }
 
-// Override breakpoints for card columns to work well with sidebar
+// Override breakpoints for card columns to work well with sidebar layout
 .card-columns {
   @media (min-width: 576px) {
     column-count: 1;
