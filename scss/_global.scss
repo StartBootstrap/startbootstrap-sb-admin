@@ -18,28 +18,6 @@ body {
     padding-bottom: $sticky-footer-height;
   }
 }
-// Fixed Nav Option
-body.fixed-nav {
-  #content-wrapper {
-    margin-top: $navbar-base-height;
-    padding-left: $sidebar-collapsed-width;
-  }
-  &.sidebar-toggled {
-    #content-wrapper {
-      padding-left: 0;
-    }
-  }
-  @media(min-width: 768px) {
-    #content-wrapper {
-      padding-left: $sidebar-base-width;
-    }
-    &.sidebar-toggled {
-      #content-wrapper {
-        padding-left: $sidebar-collapsed-width;
-      }
-    }
-  }
-}
 
 // Scroll to top button
 .scroll-to-top {
