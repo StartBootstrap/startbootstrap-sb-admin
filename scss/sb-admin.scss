@@ -1,4 +1,10 @@
+// Import Custom Variables
 @import "variables.scss";
+
+// Import Bootstrap
+@import "../vendor/bootstrap/scss/bootstrap.scss";
+
+// Import Custom SCSS
 @import "mixins.scss";
 @import "global.scss";
 @import "utilities.scss";
