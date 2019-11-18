@@ -5,7 +5,7 @@
     "scripts": {
         "start": "node_modules/.bin/gulp watch"
     },
-    "description": "A one page app landing page HTML theme for Bootstrap.",
+    "description": "A free admin dashboard template based on Bootstrap 4, created by Start Bootstrap.",
     "keywords": [
         "css",
         "sass",
@@ -14,7 +14,8 @@
         "theme",
         "template",
         "admin",
-        "app"
+        "app",
+        "dashboard"
     ],
     "homepage": "https://startbootstrap.com/template-overviews/sb-admin",
     "bugs": {
