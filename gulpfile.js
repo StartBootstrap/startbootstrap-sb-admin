@@ -150,7 +150,7 @@ function js() {
 // Pug/HTML task
 function html() {
   return gulp
-    .src(["./src/pug/pages/**/*.pug", "!./src/pug/**/config.pug"])
+    .src(["./src/pug/pages/**/*.pug", "!./src/pug/**/config.pug", "!./src/pug/pages/**/includes/**/*"])
     .pipe(
       pug({
         pretty: true

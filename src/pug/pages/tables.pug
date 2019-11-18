@@ -1,0 +1,25 @@
+extends ../layouts/dashboard-default.pug
+
+block config
+    - var pageTitle = "Tables"
+    - var sidenavStyle = 'sb-sidenav-dark'
+    
+append css
+    link(href='vendor/datatables/dataTables.bootstrap4.css', rel='stylesheet')
+
+block content
+    .container-fluid
+        include includes/page-header.pug
+        
+        .card.mb-4
+            .card-header
+                i.fas.fa-table.mr-1
+                | DataTable Example
+            .card-body
+                include includes/datatable.pug
+
+
+append scripts    
+    script(src='vendor/datatables/jquery.dataTables.js')
+    script(src='vendor/datatables/dataTables.bootstrap4.js')
+    script(src='assets/demo/datatables-demo.js')

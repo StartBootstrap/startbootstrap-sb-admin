@@ -1,4 +1,4 @@
-nav.sb-sidenav.sb-sidenav-dark.accordion#sidenavAccordion
+nav(class=['sb-sidenav', 'accordion'] class=sidenavStyle)#sidenavAccordion
         
     .sb-sidenav-menu.nav
     
@@ -15,6 +15,11 @@ nav.sb-sidenav.sb-sidenav-dark.accordion#sidenavAccordion
                 i.fas.fa-chart-area
             | Charts
             
+        a.nav-link(href='tables.html')
+            .sb-nav-link-icon
+                i.fas.fa-table
+            | Tables
+            
         .sb-sidenav-menu-heading
             | Components
 
@@ -27,7 +32,7 @@ nav.sb-sidenav.sb-sidenav-dark.accordion#sidenavAccordion
         #collapseLayouts.collapse(aria-labelledby='headingOne', data-parent='#sidenavAccordion')
             nav.sb-sidenav-menu-nested.nav
                 a.nav-link(href='layout-fixed.html') Fixed Navigation
-                a.nav-link(href='#') Nested Link
+                a.nav-link(href='layout-sidenav-light.html') Light Sidenav
         
         a.nav-link.collapsed(href='#', data-toggle='collapse' data-target='#collapsePages' aria-expanded='false' aria-controls='collapsePages')
             .sb-nav-link-icon
