@@ -1,0 +1,78 @@
+// Default behavior for the sidenav layout
+// The default positioning for the sidenav is a static position
+
+#layoutSidenav {
+  display: flex;
+  // Wraps the .sb-sidenav element and sets the size
+  #layoutSidenav_nav {
+    flex-basis: $sidenav-base-width;
+    flex-shrink: 0;
+    transition: transform 0.15s ease-in-out;
+    z-index: $zindex-sidenav;
+    // Mobile first transform - by default the sidenav will be moved off-canvas
+    transform: translateX(-$sidenav-base-width);
+  }
+  // Wraps the content when using the sidenav layout
+  #layoutSidenav_content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 0;
+    flex-grow: 1;
+    min-height: calc(100vh - #{$topnav-base-height});
+    margin-left: -$sidenav-base-width;
+  }
+}
+
+// Default behavior for the static sidenav collapse
+.sb-sidenav-toggled {
+  #layoutSidenav {
+    #layoutSidenav_nav {
+      transform: translateX(0);
+    }
+    #layoutSidenav_content {
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: $black;
+        z-index: $zindex-modal-backdrop;
+        opacity: 0.5;
+        transition: opacity 0.3s ease-in-out;
+      }
+    }
+  }
+}
+
+// Responsive styling for the sidenav layout
+@include media-breakpoint-up(lg) {
+  #layoutSidenav {
+    #layoutSidenav_nav {
+      transform: translateX(0);
+    }
+    #layoutSidenav_content {
+      margin-left: 0;
+      transition: all 0.15s ease-in-out;
+    }
+  }
+  // Behavior for the sidenav collapse on screens larger than the med breakpoint
+  .sb-sidenav-toggled {
+    #layoutSidenav {
+      #layoutSidenav_nav {
+        transform: translateX(-$sidenav-base-width);
+      }
+      #layoutSidenav_content {
+        margin-left: -$sidenav-base-width;
+        // Removes the sidenav overlay on screens larger than the med breakpoint
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+}

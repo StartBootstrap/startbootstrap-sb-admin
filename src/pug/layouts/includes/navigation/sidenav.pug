@@ -1,0 +1,61 @@
+nav.sb-sidenav.sb-sidenav-dark.accordion#sidenavAccordion
+        
+    .sb-sidenav-menu.nav
+    
+        .sb-sidenav-menu-heading
+            | Demos
+        
+        a.nav-link(href='index.html')
+            .sb-nav-link-icon
+                i.fas.fa-tachometer-alt
+            | Dashboard
+        
+        a.nav-link(href='charts.html')
+            .sb-nav-link-icon
+                i.fas.fa-chart-area
+            | Charts
+            
+        .sb-sidenav-menu-heading
+            | Components
+
+        a.nav-link.collapsed(href='#', data-toggle='collapse' data-target='#collapseLayouts' aria-expanded='false' aria-controls='collapseLayouts')
+            .sb-nav-link-icon
+                i.fas.fa-columns
+            | Layouts
+            .sb-sidenav-collapse-arrow
+                i.fas.fa-angle-down
+        #collapseLayouts.collapse(aria-labelledby='headingOne', data-parent='#sidenavAccordion')
+            nav.sb-sidenav-menu-nested.nav
+                a.nav-link(href='layout-fixed.html') Fixed Navigation
+                a.nav-link(href='#') Nested Link
+        
+        a.nav-link.collapsed(href='#', data-toggle='collapse' data-target='#collapsePages' aria-expanded='false' aria-controls='collapsePages')
+            .sb-nav-link-icon
+                i.fas.fa-book-open
+            | Pages
+            .sb-sidenav-collapse-arrow
+                i.fas.fa-angle-down
+        #collapsePages.collapse(aria-labelledby='headingTwo', data-parent='#sidenavAccordion')
+            nav.sb-sidenav-menu-nested.nav.accordion#sidenavAccordionPages
+                a.nav-link.collapsed(href='#', data-toggle='collapse' data-target='#pagesCollapseAuth' aria-expanded='false' aria-controls='pagesCollapseAuth')
+                    | Authentication
+                    .sb-sidenav-collapse-arrow
+                        i.fas.fa-angle-down
+                #pagesCollapseAuth.collapse(aria-labelledby='headingOne', data-parent='#sidenavAccordionPages')
+                    nav.sb-sidenav-menu-nested.nav
+                        a.nav-link(href='login.html') Login
+                        a.nav-link(href='register.html') Register
+                        a.nav-link(href='password.html') Forgot Password
+                a.nav-link.collapsed(href='#', data-toggle='collapse' data-target='#pagesCollapseError' aria-expanded='false' aria-controls='pagesCollapseError')
+                    | Error
+                    .sb-sidenav-collapse-arrow
+                        i.fas.fa-angle-down
+                #pagesCollapseError.collapse(aria-labelledby='headingOne', data-parent='#sidenavAccordionPages')
+                    nav.sb-sidenav-menu-nested.nav
+                        a.nav-link(href='#') Nested Link
+                        a.nav-link(href='#') Nested Link
+                        
+    .sb-sidenav-footer
+        
+        .small Logged in as:
+        | Start Bootstrap

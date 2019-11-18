@@ -1,0 +1,38 @@
+extends ../layouts/dashboard-default.pug
+
+block config
+    - var pageTitle = "Charts";
+
+block content
+    .container-fluid
+        include includes/page-header.pug
+        .card.mb-4
+            .card-header
+                i.fas.fa-chart-area.mr-1
+                | Area Chart Example
+            .card-body
+                canvas#myAreaChart(width='100%', height='30')
+            .card-footer.small.text-muted Updated yesterday at 11:59 PM
+        .row
+            .col-lg-6
+                .card.mb-4
+                    .card-header
+                        i.fas.fa-chart-bar.mr-1
+                        | Bar Chart Example
+                    .card-body
+                        canvas#myBarChart(width='100%', height='50')
+                    .card-footer.small.text-muted Updated yesterday at 11:59 PM
+            .col-lg-6
+                .card.mb-4
+                    .card-header
+                        i.fas.fa-chart-pie.mr-1
+                        | Pie Chart Example
+                    .card-body
+                        canvas#myPieChart(width='100%', height='50')
+                    .card-footer.small.text-muted Updated yesterday at 11:59 PM
+
+append scripts
+    script(src='vendor/chart.js/Chart.min.js')
+    script(src='assets/demo/chart-area-demo.js')
+    script(src='assets/demo/chart-bar-demo.js')
+    script(src='assets/demo/chart-pie-demo.js')
