@@ -3,25 +3,15 @@ nav(class=['sb-sidenav', 'accordion'] class=sidenavStyle)#sidenavAccordion
     .sb-sidenav-menu.nav
     
         .sb-sidenav-menu-heading
-            | Demos
-        
+            | Core
+    
         a.nav-link(href='index.html')
             .sb-nav-link-icon
                 i.fas.fa-tachometer-alt
             | Dashboard
-        
-        a.nav-link(href='charts.html')
-            .sb-nav-link-icon
-                i.fas.fa-chart-area
-            | Charts
-            
-        a.nav-link(href='tables.html')
-            .sb-nav-link-icon
-                i.fas.fa-table
-            | Tables
             
         .sb-sidenav-menu-heading
-            | Components
+            | Interface
 
         a.nav-link.collapsed(href='#', data-toggle='collapse' data-target='#collapseLayouts' aria-expanded='false' aria-controls='collapseLayouts')
             .sb-nav-link-icon
@@ -59,6 +49,19 @@ nav(class=['sb-sidenav', 'accordion'] class=sidenavStyle)#sidenavAccordion
                     nav.sb-sidenav-menu-nested.nav
                         a.nav-link(href='#') Nested Link
                         a.nav-link(href='#') Nested Link
+                        
+        .sb-sidenav-menu-heading
+            | Addons
+        
+        a.nav-link(href='charts.html')
+            .sb-nav-link-icon
+                i.fas.fa-chart-area
+            | Charts
+            
+        a.nav-link(href='tables.html')
+            .sb-nav-link-icon
+                i.fas.fa-table
+            | Tables
                         
     .sb-sidenav-footer
         
