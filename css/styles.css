@@ -9670,6 +9670,18 @@ body {
   margin-right: 0.5rem;
 }
 
+.sb-topnav {
+  padding-left: 0;
+  height: 56px;
+}
+
+.sb-topnav .navbar-brand {
+  width: 225px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0;
+}
+
 .sb-sidenav {
   display: flex;
   flex-direction: column;
@@ -9793,16 +9805,4 @@ body {
 
 .sb-sidenav-light .sb-sidenav-footer {
   border-top: 0.0625rem solid #e9ecef;
-}
-
-.sb-topnav {
-  padding-left: 0;
-  height: 56px;
-}
-
-.sb-topnav .navbar-brand {
-  width: 225px;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin: 0;
 }
