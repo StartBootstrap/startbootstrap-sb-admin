@@ -9760,6 +9760,25 @@ body {
   margin-top: 56px;
 }
 
+#layoutError {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#layoutError #layoutError_content {
+  min-width: 0;
+  flex-grow: 1;
+}
+
+#layoutError #layoutError_footer {
+  min-width: 0;
+}
+
+.img-error {
+  max-width: 20rem;
+}
+
 .nav .nav-link .sb-nav-link-icon,
 .sb-sidenav-menu .nav-link .sb-nav-link-icon {
   margin-right: 0.5rem;
