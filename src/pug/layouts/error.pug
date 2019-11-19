@@ -1,7 +1,7 @@
 doctype html
 
 block config
-    - var pageTitle = "Page Title"
+    - var pageTitle = "404 Error"
 
 html(lang='en')
 
@@ -12,17 +12,17 @@ html(lang='en')
         include includes/head/css.pug
         include includes/head/icons.pug
 
-    body.bg-primary
+    body
 
-        #layoutAuthentication
+        #layoutError
             
-            #layoutAuthentication_content
+            #layoutError_content
 
                 main
                     
                     block content
 
-            #layoutAuthentication_footer
+            #layoutError_footer
                     
                 include includes/footer.pug
 
