@@ -3,7 +3,13 @@
     "name": "startbootstrap-sb-admin",
     "version": "6.0.0",
     "scripts": {
-        "start": "node_modules/.bin/gulp watch"
+        "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
+        "build:assets": "node scripts/build-assets.js",
+        "build:pug": "node scripts/build-pug.js",
+        "build:scripts": "node scripts/build-scripts.js",
+        "build:scss": "node scripts/build-scss.js",
+        "clean": "node scripts/clean.js",
+        "start": "npm run build && node scripts/start.js"
     },
     "description": "A free admin dashboard template based on Bootstrap 4, created by Start Bootstrap.",
     "keywords": [
@@ -42,18 +48,10 @@
     },
     "devDependencies": {
         "browser-sync": "2.26.7",
-        "del": "5.1.0",
-        "gulp": "4.0.2",
-        "gulp-autoprefixer": "7.0.1",
-        "gulp-clean-css": "4.2.0",
-        "gulp-concat": "^2.6.1",
-        "gulp-flatten": "^0.4.0",
-        "gulp-header": "2.0.9",
-        "gulp-plumber": "^1.2.1",
-        "gulp-pug": "^4.0.1",
-        "gulp-rename": "1.4.0",
-        "gulp-sass": "4.0.2",
-        "gulp-uglify": "3.0.2",
-        "merge-stream": "2.0.0"
+        "chokidar": "3.3.0",
+        "concurrently": "5.0.0",
+        "pug": "2.0.4",
+        "sass": "1.23.6",
+        "shelljs": "0.8.3"
     }
 }
