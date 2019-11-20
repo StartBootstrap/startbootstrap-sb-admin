@@ -1,5 +1,6 @@
 'use strict';
 
+const _ = require('lodash');
 const chokidar = require('chokidar');
 const path = require('path');
 const renderAssets = require('./render-assets');
@@ -60,7 +61,7 @@ function _handlePug(filePath, watchEvent) {
 
 function _renderAllPug() {
     console.log('### INFO: Rendering All');
-    each(allFiles, (value, filePath) => {
+    _.each(allFiles, (value, filePath) => {
         renderPug(filePath);
     });
 }

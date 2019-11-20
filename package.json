@@ -9,7 +9,8 @@
         "build:scripts": "node scripts/build-scripts.js",
         "build:scss": "node scripts/build-scss.js",
         "clean": "node scripts/clean.js",
-        "start": "npm run build && node scripts/start.js"
+        "start": "npm run build && node scripts/start.js",
+        "start:debug": "npm run build && node scripts/start-debug.js"
     },
     "description": "A free admin dashboard template based on Bootstrap 4, created by Start Bootstrap.",
     "keywords": [
@@ -38,13 +39,7 @@
         "url": "https://github.com/BlackrockDigital/startbootstrap-sb-admin.git"
     },
     "dependencies": {
-        "@fortawesome/fontawesome-free": "5.11.2",
-        "bootstrap": "4.3.1",
-        "chart.js": "^2.9.2",
-        "datatables.net-bs4": "^1.10.20",
-        "feather-icons": "4.24.1",
-        "jquery": "^3.4.1",
-        "jquery.easing": "^1.4.1"
+        "bootstrap": "4.3.1"
     },
     "devDependencies": {
         "browser-sync": "2.26.7",
