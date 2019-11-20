@@ -1,7 +1,7 @@
 extends ../layouts/dashboard-default.pug
 
 block config
-    - var pageTitle = "Charts"
+    - var pageTitle = 'Charts'
     - var sidenavStyle = 'sb-sidenav-dark'
 
 block content
@@ -36,7 +36,7 @@ block content
                     .card-footer.small.text-muted Updated yesterday at 11:59 PM
 
 append scripts
-    script(src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js', crossorigin='anonymous')
     script(src='assets/demo/chart-area-demo.js')
     script(src='assets/demo/chart-bar-demo.js')
     script(src='assets/demo/chart-pie-demo.js')
