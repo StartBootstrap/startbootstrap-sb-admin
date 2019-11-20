@@ -5,7 +5,7 @@ block config
     - var sidenavStyle = 'sb-sidenav-dark'
     
 append css
-    link(href='vendor/datatables/dataTables.bootstrap4.css', rel='stylesheet')
+    link(href='https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css', rel='stylesheet')
 
 block content
     .container-fluid
@@ -22,6 +22,6 @@ block content
 
 
 append scripts    
-    script(src='vendor/datatables/jquery.dataTables.js')
-    script(src='vendor/datatables/dataTables.bootstrap4.js')
+    script(src='https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js')
+    script(src='https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js')
     script(src='assets/demo/datatables-demo.js')
