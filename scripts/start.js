@@ -1,10 +1,10 @@
 const concurrently = require('concurrently');
 
 concurrently([
-    { command: 'node scripts/sb-watch.js', name: 'SB_WATCH', prefixColor: 'bgBlue.bold' },
+    { command: 'node scripts/sb-watch.js', name: 'SB_WATCH', prefixColor: 'bgGreen.bold' },
     { 
         command: 'node_modules/.bin/browser-sync dist -w --no-online',
-        name: 'SB_WATCH', 
+        name: 'BROWSER_SYNC', 
         prefixColor: 'bgBlue.bold',
     }
 ], {
