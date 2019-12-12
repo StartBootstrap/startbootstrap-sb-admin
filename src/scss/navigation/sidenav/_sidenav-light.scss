@@ -1,33 +1,33 @@
 // Light theme for sidenav
-// Append .sb-sidenav-dark to .sb-sidenav to use
+// Append .sb-sidenav-light to .sb-sidenav to use
 
 .sb-sidenav-light {
-  background-color: $gray-100;
-  color: $gray-900;
+  background-color: $sidenav-light-bg;
+  color: $sidenav-light-color;
   .sb-sidenav-menu {
     .sb-sidenav-menu-heading {
-      color: $gray-500;
+      color: $sidenav-light-heading-color;
     }
     .nav-link {
-      color: $gray-900;
+      color: $sidenav-light-link-color;
       .sb-nav-link-icon {
-        color: $gray-500;
+        color: $sidenav-light-icon-color;
       }
       .sb-sidenav-collapse-arrow {
-        color: $gray-400;
+        color: $sidenav-light-icon-color;
       }
       &:hover {
-        color: $primary;
+        color: $sidenav-light-link-active-color;
       }
       &.active {
-        color: $primary;
+        color: $sidenav-light-link-active-color;
         .sb-nav-link-icon {
-          color: $primary;
+          color: $sidenav-light-link-active-color;
         }
       }
     }
   }
   .sb-sidenav-footer {
-    border-top: 0.0625rem solid $gray-200;
+    background-color: $sidenav-light-footer-bg;
   }
 }

@@ -9,4 +9,14 @@
       padding-right: $navbar-padding-x;
       margin: 0;
   }
+  &.navbar-dark {
+      #sidebarToggle {
+          color: $topnav-dark-toggler-color;
+      }
+  }
+  &.navbar-light {
+      #sidebarToggle {
+          color: $topnav-light-toggler-color;
+      }
+  }
 }
