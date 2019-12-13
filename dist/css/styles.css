@@ -9870,6 +9870,7 @@ body {
 .sb-topnav {
   padding-left: 0;
   height: 56px;
+  z-index: 1090;
 }
 .sb-topnav .navbar-brand {
   width: 225px;
