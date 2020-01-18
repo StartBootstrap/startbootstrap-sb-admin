@@ -1,0 +1,21 @@
+// Import Custom Variables
+@import "variables.scss";
+
+// Import Bootstrap
+@import "bootstrap/scss/bootstrap.scss";
+
+// Import Custom SCSS
+@import "global.scss";
+
+// Layout
+@import "layout/authentication.scss";
+@import "layout/dashboard-default.scss";
+@import "layout/dashboard-fixed.scss";
+@import "layout/error.scss";
+
+// Navigation
+@import "navigation/nav.scss";
+@import "navigation/topnav.scss";
+@import "navigation/sidenav/sidenav.scss";
+@import "navigation/sidenav/sidenav-dark.scss";
+@import "navigation/sidenav/sidenav-light.scss";

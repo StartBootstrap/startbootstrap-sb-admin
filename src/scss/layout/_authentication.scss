@@ -1,0 +1,12 @@
+#layoutAuthentication {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  #layoutAuthentication_content {
+    min-width: 0;
+    flex-grow: 1;
+  }
+  #layoutAuthentication_footer {
+    min-width: 0;
+  }
+}

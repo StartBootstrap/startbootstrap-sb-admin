@@ -1,0 +1,14 @@
+extends ../layouts/dashboard.pug
+
+block config
+    - var bodyClass = 'sb-nav-fixed'
+    - var pageTitle = 'Sidenav Light'
+    - var sidenavStyle = 'sb-sidenav-light'
+
+block content
+    .container-fluid
+        include includes/page-header.pug
+        
+        .card.mb-4
+            .card-body.
+                This page is an example of using the light side navigation option. By appending the <code>.sb-sidenav-light</code> class to the <code>.sb-sidenav</code> class, the side navigation will take on a light color scheme. The <code>.sb-sidenav-dark</code> is also available for a darker option.

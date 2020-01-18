@@ -1,0 +1,37 @@
+extends ../layouts/authentication.pug
+
+block content
+    .container
+        .row.justify-content-center
+            .col-lg-7
+                .card.shadow-lg.border-0.rounded-lg.mt-5
+                    .card-header
+                        h3.text-center.font-weight-light.my-4 Create Account
+                    .card-body
+                        form
+                            .form-row
+                                .col-md-6
+                                    .form-group
+                                        label.small.mb-1(for='inputFirstName') First Name
+                                        input#inputFirstName.form-control.py-4(type='text', placeholder='Enter first name')
+                                .col-md-6
+                                    .form-group
+                                        label.small.mb-1(for='inputLastName') Last Name
+                                        input#inputLastName.form-control.py-4(type='text', placeholder='Enter last name')
+                            .form-group
+                                label.small.mb-1(for='inputEmailAddress') Email
+                                input#inputEmailAddress.form-control.py-4(type='email', aria-describedby='emailHelp', placeholder='Enter email address')
+                            .form-row
+                                .col-md-6
+                                    .form-group
+                                        label.small.mb-1(for='inputPassword') Password
+                                        input#inputPassword.form-control.py-4(type='password', placeholder='Enter password')
+                                .col-md-6
+                                    .form-group
+                                        label.small.mb-1(for='inputConfirmPassword') Confirm Password
+                                        input#inputConfirmPassword.form-control.py-4(type='password', placeholder='Confirm password')
+                            .form-group.mt-4.mb-0
+                                a.btn.btn-primary.btn-block(href='login.html') Create Account
+                    .card-footer.text-center
+                        .small
+                            a(href='register.html') Have an account? Go to login
