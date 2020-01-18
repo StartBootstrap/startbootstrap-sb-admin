@@ -12,17 +12,33 @@ const watcher = chokidar.watch('src', {
     persistent: true,
 });
 
-process.title = 'pug-watch';
+let READY = false;
 
-let allFiles = {};
+process.title = 'pug-watch';
+process.stdout.write('Loading');
+let allPugFiles = {};
 
 watcher.on('add', filePath => _processFile(filePath, 'add'));
 watcher.on('change', filePath => _processFile(filePath, 'change'));
+watcher.on('ready', () => {
+    READY = true;
+    console.log(' READY TO ROLL!');
+});
 
 _handleSCSS();
 
 function _processFile(filePath, watchEvent) {
     
+    if (!READY) {
+        if (filePath.match(/\.pug$/)) {
+            if (!filePath.match(/includes/) && !filePath.match(/\/pug\/layouts\//)) {
+                allPugFiles[filePath] = true;
+            }    
+        }    
+        process.stdout.write('.');
+        return;
+    }
+
     console.log(`### INFO: File event: ${watchEvent}: ${filePath}`);
 
     if (filePath.match(/\.pug$/)) {
@@ -54,14 +70,13 @@ function _handlePug(filePath, watchEvent) {
         return renderPug(filePath);
     }
     if (!filePath.match(/includes/) && !filePath.match(/\/pug\/layouts\//)) {
-        allFiles[filePath] = true;
         return renderPug(filePath);
     }
 }
 
 function _renderAllPug() {
     console.log('### INFO: Rendering All');
-    _.each(allFiles, (value, filePath) => {
+    _.each(allPugFiles, (value, filePath) => {
         renderPug(filePath);
     });
 }
