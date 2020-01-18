@@ -4,7 +4,7 @@
 
 ## Preview
 
-[![SB Admin Preview](https://startbootstrap.com/assets/img/templates/sb-admin.jpg)](https://blackrockdigital.github.io/startbootstrap-sb-admin/)
+[![SB Admin Preview](https://startbootstrap.com/assets/img/screenshots/templates/sb-admin.png)](https://blackrockdigital.github.io/startbootstrap-sb-admin/)
 
 **[View Live Preview](https://blackrockdigital.github.io/startbootstrap-sb-admin/)**
 

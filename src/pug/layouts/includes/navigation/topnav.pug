@@ -1,0 +1,22 @@
+nav.sb-topnav.navbar.navbar-expand.navbar-dark.bg-dark
+  a.navbar-brand(href='index.html')
+    | Start Bootstrap
+  button#sidebarToggle.btn.btn-link.btn-sm.order-1.order-lg-0(href='#')
+    i.fas.fa-bars
+  // Navbar Search
+  form.d-none.d-md-inline-block.form-inline.ml-auto.mr-0.mr-md-3.my-2.my-md-0
+    .input-group
+      input.form-control(type='text', placeholder='Search for...', aria-label='Search', aria-describedby='basic-addon2')
+      .input-group-append
+        button.btn.btn-primary(type='button')
+          i.fas.fa-search
+  // Navbar
+  ul.navbar-nav.ml-auto.ml-md-0
+    li.nav-item.dropdown
+      a#userDropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+        i.fas.fa-user.fa-fw
+      .dropdown-menu.dropdown-menu-right(aria-labelledby='userDropdown')
+        a.dropdown-item(href='#') Settings
+        a.dropdown-item(href='#') Activity Log
+        .dropdown-divider
+        a.dropdown-item(href='login.html') Logout

@@ -1,0 +1,29 @@
+doctype html
+
+block config
+    - var pageTitle = "404 Error"
+
+html(lang='en')
+
+    head
+
+        include includes/head/meta.pug
+        include includes/head/title.pug
+        include includes/head/css.pug
+        include includes/head/icons.pug
+
+    body
+
+        #layoutError
+            
+            #layoutError_content
+
+                main
+                    
+                    block content
+
+            #layoutError_footer
+                    
+                include includes/footer.pug
+
+        include includes/scripts.pug

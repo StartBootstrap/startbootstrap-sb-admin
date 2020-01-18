@@ -1,0 +1,85 @@
+extends ../layouts/dashboard.pug
+
+block config
+    - var bodyClass = 'sb-nav-fixed'
+    - var pageTitle = 'Dashboard';
+    - var index = true;
+    - var sidenavStyle = 'sb-sidenav-dark'
+    
+append css
+    link(href='https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css', rel='stylesheet', crossorigin='anonymous')
+
+block content
+    .container-fluid
+        include includes/page-header.pug
+        .row
+            .col-xl-3.col-md-6
+                .card.bg-primary.text-white.mb-4
+                    .card-body
+                        | Primary Card
+                    .card-footer.d-flex.align-items-center.justify-content-between
+                        a(href='#').small.text-white.stretched-link
+                            | View Details
+                        .small.text-white
+                            i.fas.fa-angle-right
+            .col-xl-3.col-md-6
+                .card.bg-warning.text-white.mb-4
+                    .card-body
+                        | Warning Card
+                    .card-footer.d-flex.align-items-center.justify-content-between
+                        a(href='#').small.text-white.stretched-link
+                            | View Details
+                        .small.text-white
+                            i.fas.fa-angle-right
+            .col-xl-3.col-md-6
+                .card.bg-success.text-white.mb-4
+                    .card-body
+                        | Success Card
+                    .card-footer.d-flex.align-items-center.justify-content-between
+                        a(href='#').small.text-white.stretched-link
+                            | View Details
+                        .small.text-white
+                            i.fas.fa-angle-right
+            .col-xl-3.col-md-6
+                .card.bg-danger.text-white.mb-4
+                    .card-body
+                        | Danger Card
+                    .card-footer.d-flex.align-items-center.justify-content-between
+                        a(href='#').small.text-white.stretched-link
+                            | View Details
+                        .small.text-white
+                            i.fas.fa-angle-right
+        .row
+
+            .col-xl-6
+                .card.mb-4
+                    .card-header
+                        i.fas.fa-chart-area.mr-1
+                        | Area Chart Example
+                    .card-body
+                        canvas#myAreaChart(width='100%', height='40')
+                    
+            .col-xl-6
+                .card.mb-4
+                    .card-header
+                        i.fas.fa-chart-bar.mr-1
+                        | Bar Chart Example
+                    .card-body
+                        canvas#myBarChart(width='100%', height='40')
+        
+        .card.mb-4
+            .card-header
+                i.fas.fa-table.mr-1
+                | DataTable Example
+            .card-body
+                include includes/datatable.pug
+
+
+append scripts
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js', crossorigin='anonymous')
+    script(src='assets/demo/chart-area-demo.js')
+    script(src='assets/demo/chart-bar-demo.js')
+    
+    script(src='https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js', crossorigin='anonymous')
+    script(src='https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js', crossorigin='anonymous')
+    script(src='assets/demo/datatables-demo.js')

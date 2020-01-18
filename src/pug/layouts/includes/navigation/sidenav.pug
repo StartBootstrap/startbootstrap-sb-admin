@@ -1,0 +1,72 @@
+nav(class=['sb-sidenav', 'accordion'] class=sidenavStyle)#sidenavAccordion
+        
+    .sb-sidenav-menu
+        
+        .nav
+    
+            .sb-sidenav-menu-heading
+                | Core
+        
+            a.nav-link(href='index.html')
+                .sb-nav-link-icon
+                    i.fas.fa-tachometer-alt
+                | Dashboard
+                
+            .sb-sidenav-menu-heading
+                | Interface
+
+            a.nav-link.collapsed(href='#', data-toggle='collapse' data-target='#collapseLayouts' aria-expanded='false' aria-controls='collapseLayouts')
+                .sb-nav-link-icon
+                    i.fas.fa-columns
+                | Layouts
+                .sb-sidenav-collapse-arrow
+                    i.fas.fa-angle-down
+            #collapseLayouts.collapse(aria-labelledby='headingOne', data-parent='#sidenavAccordion')
+                nav.sb-sidenav-menu-nested.nav
+                    a.nav-link(href='layout-static.html') Static Navigation
+                    a.nav-link(href='layout-sidenav-light.html') Light Sidenav
+            
+            a.nav-link.collapsed(href='#', data-toggle='collapse' data-target='#collapsePages' aria-expanded='false' aria-controls='collapsePages')
+                .sb-nav-link-icon
+                    i.fas.fa-book-open
+                | Pages
+                .sb-sidenav-collapse-arrow
+                    i.fas.fa-angle-down
+            #collapsePages.collapse(aria-labelledby='headingTwo', data-parent='#sidenavAccordion')
+                nav.sb-sidenav-menu-nested.nav.accordion#sidenavAccordionPages
+                    a.nav-link.collapsed(href='#', data-toggle='collapse' data-target='#pagesCollapseAuth' aria-expanded='false' aria-controls='pagesCollapseAuth')
+                        | Authentication
+                        .sb-sidenav-collapse-arrow
+                            i.fas.fa-angle-down
+                    #pagesCollapseAuth.collapse(aria-labelledby='headingOne', data-parent='#sidenavAccordionPages')
+                        nav.sb-sidenav-menu-nested.nav
+                            a.nav-link(href='login.html') Login
+                            a.nav-link(href='register.html') Register
+                            a.nav-link(href='password.html') Forgot Password
+                    a.nav-link.collapsed(href='#', data-toggle='collapse' data-target='#pagesCollapseError' aria-expanded='false' aria-controls='pagesCollapseError')
+                        | Error
+                        .sb-sidenav-collapse-arrow
+                            i.fas.fa-angle-down
+                    #pagesCollapseError.collapse(aria-labelledby='headingOne', data-parent='#sidenavAccordionPages')
+                        nav.sb-sidenav-menu-nested.nav
+                            a.nav-link(href='401.html') 401 Page
+                            a.nav-link(href='404.html') 404 Page
+                            a.nav-link(href='500.html') 500 Page
+                            
+            .sb-sidenav-menu-heading
+                | Addons
+            
+            a.nav-link(href='charts.html')
+                .sb-nav-link-icon
+                    i.fas.fa-chart-area
+                | Charts
+                
+            a.nav-link(href='tables.html')
+                .sb-nav-link-icon
+                    i.fas.fa-table
+                | Tables
+                        
+    .sb-sidenav-footer
+        
+        .small Logged in as:
+        | Start Bootstrap

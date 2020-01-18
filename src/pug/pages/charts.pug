@@ -1,0 +1,43 @@
+extends ../layouts/dashboard.pug
+
+block config
+    - var bodyClass = 'sb-nav-fixed'
+    - var pageTitle = 'Charts'
+    - var sidenavStyle = 'sb-sidenav-dark'
+
+block content
+    .container-fluid
+        include includes/page-header.pug
+        .card.mb-4
+            .card-body.
+                Chart.js is a third party plugin that is used to generate the charts in this template. The charts below have been customized - for further customization options, please visit the official <a target='_blank' href='https://www.chartjs.org/docs/latest/'>Chart.js documentation</a>.
+        .card.mb-4
+            .card-header
+                i.fas.fa-chart-area.mr-1
+                | Area Chart Example
+            .card-body
+                canvas#myAreaChart(width='100%', height='30')
+            .card-footer.small.text-muted Updated yesterday at 11:59 PM
+        .row
+            .col-lg-6
+                .card.mb-4
+                    .card-header
+                        i.fas.fa-chart-bar.mr-1
+                        | Bar Chart Example
+                    .card-body
+                        canvas#myBarChart(width='100%', height='50')
+                    .card-footer.small.text-muted Updated yesterday at 11:59 PM
+            .col-lg-6
+                .card.mb-4
+                    .card-header
+                        i.fas.fa-chart-pie.mr-1
+                        | Pie Chart Example
+                    .card-body
+                        canvas#myPieChart(width='100%', height='50')
+                    .card-footer.small.text-muted Updated yesterday at 11:59 PM
+
+append scripts
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js', crossorigin='anonymous')
+    script(src='assets/demo/chart-area-demo.js')
+    script(src='assets/demo/chart-bar-demo.js')
+    script(src='assets/demo/chart-pie-demo.js')

@@ -1,0 +1,33 @@
+doctype html
+
+block config
+    - var pageTitle = "Page Title"
+
+html(lang='en')
+
+    head
+
+        include includes/head/meta.pug
+        include includes/head/title.pug
+        include includes/head/css.pug
+        include includes/head/icons.pug
+
+    body(class=bodyClass)
+
+        include includes/navigation/topnav.pug
+
+        #layoutSidenav
+            
+            #layoutSidenav_nav
+
+                include includes/navigation/sidenav.pug
+
+            #layoutSidenav_content
+                
+                main
+
+                    block content
+                    
+                include includes/footer.pug
+
+        include includes/scripts.pug
