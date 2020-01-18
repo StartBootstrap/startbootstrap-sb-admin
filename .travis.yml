@@ -4,7 +4,7 @@ node_js:
   - "node"
 install:       npm install
 script:
-  - npm build
+  - npm run build
 cache:
   directories:
     - node_modules
