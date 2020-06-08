@@ -11,6 +11,11 @@
         $("#layoutSidenav_nav .sb-sidenav a.nav-link").each(function() {
             if (this.href === path) {
                 $(this).addClass("active");
+                var level = $(this).parent();
+                if(level.is('nav')){
+                    level.parent().addClass("show");
+                    level.parent().prev().addClass("active");
+                }
             }
         });
 
