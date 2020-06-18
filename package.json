@@ -1,7 +1,7 @@
 {
     "title": "SB Admin",
     "name": "startbootstrap-sb-admin",
-    "version": "6.0.0",
+    "version": "6.0.1",
     "scripts": {
         "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
         "build:assets": "node scripts/build-assets.js",
@@ -26,7 +26,7 @@
     ],
     "homepage": "https://startbootstrap.com/templates/sb-admin",
     "bugs": {
-        "url": "https://github.com/BlackrockDigital/startbootstrap-sb-admin/issues",
+        "url": "https://github.com/StartBootstrap/startbootstrap-sb-admin/issues",
         "email": "feedback@startbootstrap.com"
     },
     "license": "MIT",
@@ -36,20 +36,21 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/BlackrockDigital/startbootstrap-sb-admin.git"
+        "url": "https://github.com/StartBootstrap/startbootstrap-sb-admin.git"
     },
     "dependencies": {
-        "bootstrap": "4.4.1"
+        "bootstrap": "4.5.0"
     },
     "devDependencies": {
-        "autoprefixer": "9.7.4",
+        "autoprefixer": "9.8.0",
         "browser-sync": "2.26.7",
-        "chokidar": "3.3.1",
-        "concurrently": "5.0.2",
-        "postcss": "7.0.26",
-        "prettier": "1.19.1",
-        "pug": "2.0.4",
-        "sass": "1.25.0",
-        "shelljs": "0.8.3"
+        "chokidar": "3.4.0",
+        "concurrently": "5.2.0",
+        "postcss": "7.0.32",
+        "prettier": "2.0.5",
+        "pug": "3.0.0",
+        "sass": "1.26.8",
+        "shelljs": "0.8.4",
+        "upath": "1.2.0"
     }
 }
