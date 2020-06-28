@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <link href="http://api.nongsaro.go.kr/css/api.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="http://api.nongsaro.go.kr/js/framework.js"></script>
+<script type="text/javascript" src="http://api.nongsaro.go.kr/js/openapi_nongsaro.js"></script>
+
+<script type="text/javascript">
+nongsaroOpenApiRequest.apiKey = "20200608QEFXLZ2ELPC9VDBBZXPMNG";
+nongsaroOpenApiRequest.serviceName = "monthFd";
+nongsaroOpenApiRequest.operationName = "monthFdYearLst";
+var dt = new Date();
+nongsaroOpenApiRequest.thisYear = itoStr(dt.getFullYear());//초기값 현재년도 셋팅
+nongsaroOpenApiRequest.thisMonth = itoStr(dt.getMonth()+1);//초기값 현재월 셋팅
+nongsaroOpenApiRequest.htmlArea="nongsaroApiLoadingArea";
+nongsaroOpenApiRequest.callback = "http://localhost/ajax";
+function itoStr($num){
+	$num < 10 ? $num = '0'+$num : $num;
+	return $num.toString();
+}
+</script>
+</head>
+
+<body>
+  <div id="nongsaroApiLoadingArea"></div><!-- 검색 HTML 로딩 영역 -->
+  <div id="nongsaroApiLoadingAreaResult"></div><!-- 검색결과 HTML 로딩 영역 -->
+  <div id="nongsaroApiLoadingAreaResult1"></div><!-- 검색결과 HTML 로딩 영역 -->
+
+  </body>
+</html>
