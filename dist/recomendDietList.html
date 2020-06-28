@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta content="no-cache" http-equiv="pragma">
+<title>추천식단 Open API Ajax 샘플 페이지</title>
+
+<!-- 공통 CSS, JS 선언 -->
+<link href="http://api.nongsaro.go.kr/css/api.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="http://api.nongsaro.go.kr/js/framework.js"></script>
+<script type="text/javascript" src="http://api.nongsaro.go.kr/js/openapi_nongsaro.js"></script>
+
+<script type="text/javascript">
+nongsaroOpenApiRequest.apiKey = "20200608QEFXLZ2ELPC9VDBBZXPMNG";
+nongsaroOpenApiRequest.serviceName = "monthFd";
+nongsaroOpenApiRequest.operationName = "monthFdYearLst";
+var dt = new Date();
+nongsaroOpenApiRequest.thisYear = itoStr(dt.getFullYear());//초기값 현재년도 셋팅
+nongsaroOpenApiRequest.thisMonth = itoStr(dt.getMonth()+1);//초기값 현재월 셋팅
+nongsaroOpenApiRequest.htmlArea="nongsaroApiLoadingArea";
+nongsaroOpenApiRequest.callback = "http://localhost/ajax";
+function itoStr($num){
+	$num < 10 ? $num = '0'+$num : $num;
+	return $num.toString();
+}
+</script>
+</head>
+
+<body>
+<!-- ID를 변경하지 말고 제공할 페이지에 삽입하세요 -->
+<div id="nongsaroApiLoadingArea"></div><!-- 메인카테고리 HTML 로딩 영역 -->
+<div id="nongsaroApiLoadingArea1"></div><!-- 음식 리스트 HTML 로딩 영역 -->
+<div id="nongsaroApiLoadingArea2"></div><!-- 음식 상세  HTML 로딩 영역 -->
+</body>
+</html>
