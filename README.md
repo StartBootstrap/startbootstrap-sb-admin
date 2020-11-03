@@ -1,10 +1,10 @@
-# [Start Bootstrap - SB Admin](https://startbootstrap.com/templates/sb-admin/)
+# [Start Bootstrap - SB Admin](https://startbootstrap.com/template/sb-admin/)
 
-[SB Admin](https://startbootstrap.com/templates/sb-admin/) is an open source, admin dashboard template for [Bootstrap](https://getbootstrap.com/) created by [Start Bootstrap](https://startbootstrap.com/).
+[SB Admin](https://startbootstrap.com/template/sb-admin/) is an open source, admin dashboard template for [Bootstrap](https://getbootstrap.com/) created by [Start Bootstrap](https://startbootstrap.com/).
 
 ## Preview
 
-[![SB Admin Preview](https://startbootstrap.com/assets/img/screenshots/templates/sb-admin.png)](https://startbootstrap.github.io/startbootstrap-sb-admin/)
+[![SB Admin Preview](https://assets.startbootstrap.com/img/screenshots/templates/sb-admin.png)](https://startbootstrap.github.io/startbootstrap-sb-admin/)
 
 **[View Live Preview](https://startbootstrap.github.io/startbootstrap-sb-admin/)**
 
@@ -20,7 +20,7 @@
 
 To begin using this template, choose one of the following options to get started:
 
-* [Download the latest release on Start Bootstrap](https://startbootstrap.com/templates/sb-admin/)
+* [Download the latest release on Start Bootstrap](https://startbootstrap.com/template/sb-admin/)
 * Install via npm: `npm i startbootstrap-sb-admin`
 * Clone the repo: `git clone https://github.com/StartBootstrap/startbootstrap-sb-admin.git`
 * [Fork, Clone, or Download on GitHub](https://github.com/StartBootstrap/startbootstrap-sb-admin)
@@ -37,7 +37,7 @@ After installation, run `npm install` and then run `npm start` which will open u
 
 ## Bugs and Issues
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/StartBootstrap/startbootstrap-sb-admin/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](https://startbootstrap.com/templates/sb-admin/).
+Have a bug or an issue with this template? [Open a new issue](https://github.com/StartBootstrap/startbootstrap-sb-admin/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](https://startbootstrap.com/template/sb-admin/).
 
 ## Custom Builds
 
@@ -50,10 +50,10 @@ Start Bootstrap is an open source library of free Bootstrap templates and themes
 * <https://startbootstrap.com>
 * <https://twitter.com/SBootstrap>
 
-Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**.
+Start Bootstrap was created by and is maintained by **[David Miller](https://davidmiller.io/)**.
 
-* <http://davidmiller.io>
-* <https://twitter.com/davidmillerskt>
+* <https://davidmiller.io>
+* <https://twitter.com/davidmillerhere>
 * <https://github.com/davidtmiller>
 
 Start Bootstrap is based on the [Bootstrap](https://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
