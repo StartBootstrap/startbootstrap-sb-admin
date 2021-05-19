@@ -1,5 +1,8 @@
 extends ../layouts/authentication.pug
 
+block config
+    - var pageTitle = 'Register'
+
 block content
     .container
         .row.justify-content-center
@@ -9,29 +12,30 @@ block content
                         h3.text-center.font-weight-light.my-4 Create Account
                     .card-body
                         form
-                            .form-row
+                            .row.mb-3
                                 .col-md-6
-                                    .form-group
-                                        label.small.mb-1(for='inputFirstName') First Name
-                                        input#inputFirstName.form-control.py-4(type='text', placeholder='Enter first name')
+                                    .form-floating.mb-3.mb-md-0
+                                        input#inputFirstName.form-control(type='text', placeholder='Enter your first name')
+                                        label(for='inputFirstName') First name
                                 .col-md-6
-                                    .form-group
-                                        label.small.mb-1(for='inputLastName') Last Name
-                                        input#inputLastName.form-control.py-4(type='text', placeholder='Enter last name')
-                            .form-group
-                                label.small.mb-1(for='inputEmailAddress') Email
-                                input#inputEmailAddress.form-control.py-4(type='email', aria-describedby='emailHelp', placeholder='Enter email address')
-                            .form-row
+                                    .form-floating
+                                        input#inputLastName.form-control(type='text', placeholder='Enter your last name')
+                                        label(for='inputLastName') Last name
+                            .form-floating.mb-3
+                                input#inputEmail.form-control(type='email', placeholder='name@example.com')
+                                label(for='inputEmail') Email address
+                            .row.mb-3
                                 .col-md-6
-                                    .form-group
-                                        label.small.mb-1(for='inputPassword') Password
-                                        input#inputPassword.form-control.py-4(type='password', placeholder='Enter password')
+                                    .form-floating.mb-3.mb-md-0
+                                        input#inputPassword.form-control(type='password', placeholder='Create a password')
+                                        label(for='inputPassword') Password
                                 .col-md-6
-                                    .form-group
-                                        label.small.mb-1(for='inputConfirmPassword') Confirm Password
-                                        input#inputConfirmPassword.form-control.py-4(type='password', placeholder='Confirm password')
-                            .form-group.mt-4.mb-0
-                                a.btn.btn-primary.btn-block(href='login.html') Create Account
-                    .card-footer.text-center
+                                    .form-floating.mb-3.mb-md-0
+                                        input#inputPasswordConfirm.form-control(type='password', placeholder='Confirm password')
+                                        label(for='inputPasswordConfirm') Confirm Password
+                            .mt-4.mb-0
+                                .d-grid
+                                    a.btn.btn-primary.btn-block(href='login.html') Create Account
+                    .card-footer.text-center.py-3
                         .small
                             a(href='login.html') Have an account? Go to login

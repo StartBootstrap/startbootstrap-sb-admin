@@ -1,23 +1,28 @@
-// Base styling for the topnav
+// 
+// Topnav
+// 
 
 .sb-topnav {
-  padding-left: 0;
-  height: $topnav-base-height;
-  z-index: $zindex-topnav;
-  .navbar-brand {
-      width: $sidenav-base-width;
-      padding-left: $navbar-padding-x;
-      padding-right: $navbar-padding-x;
-      margin: 0;
-  }
-  &.navbar-dark {
-      #sidebarToggle {
-          color: $topnav-dark-toggler-color;
-      }
-  }
-  &.navbar-light {
-      #sidebarToggle {
-          color: $topnav-light-toggler-color;
-      }
-  }
+    padding-left: 0;
+    height: $topnav-base-height;
+    z-index: $zindex-topnav;
+
+    .navbar-brand {
+        width: $sidenav-base-width;
+        padding-left: $navbar-padding-x;
+        padding-right: $navbar-padding-x;
+        margin: 0;
+    }
+
+    &.navbar-dark {
+        #sidebarToggle {
+            color: $topnav-dark-toggler-color;
+        }
+    }
+
+    &.navbar-light {
+        #sidebarToggle {
+            color: $topnav-light-toggler-color;
+        }
+    }
 }

@@ -5,24 +5,25 @@ block config
     - var pageTitle = 'Tables'
     - var sidenavStyle = 'sb-sidenav-dark'
     
-append css
-    link(href='https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css', rel='stylesheet', crossorigin='anonymous')
+prepend css
+    //- Load Simple DataTables Stylesheet
+    link(href='https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css', rel='stylesheet')
 
 block content
-    .container-fluid
+    .container-fluid.px-4
         include includes/page-header.pug
         .card.mb-4
             .card-body.
                 DataTables is a third party plugin that is used to generate the demo table below. For more information about DataTables, please visit the  <a target='_blank' href='https://datatables.net/'>official DataTables documentation</a>.
         .card.mb-4
             .card-header
-                i.fas.fa-table.mr-1
+                i.fas.fa-table.me-1
                 | DataTable Example
             .card-body
                 include includes/datatable.pug
 
 
 append scripts    
-    script(src='https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js', crossorigin='anonymous')
-    script(src='https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js', crossorigin='anonymous')
-    script(src='assets/demo/datatables-demo.js')
+    //- Load Simple DataTables Scripts
+    script(src='https://cdn.jsdelivr.net/npm/simple-datatables@latest', crossorigin='anonymous')
+    script(src='js/datatables-simple-demo.js')
