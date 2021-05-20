@@ -1,14 +1,20 @@
+// 
+// Error page layout
+// 
+
 #layoutError {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  #layoutError_content {
-    min-width: 0;
-    flex-grow: 1;
-  }
-  #layoutError_footer {
-    min-width: 0;
-  }
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    #layoutError_content {
+        min-width: 0;
+        flex-grow: 1;
+    }
+
+    #layoutError_footer {
+        min-width: 0;
+    }
 }
 
 .img-error {
