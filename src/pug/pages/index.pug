@@ -8,7 +8,7 @@ block config
     
 prepend css
     //- Load Simple DataTables Stylesheet
-    link(href='https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css', rel='stylesheet')
+    link(href='https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css', rel='stylesheet')
 
 block content
     .container-fluid.px-4
@@ -83,5 +83,5 @@ append scripts
     script(src='assets/demo/chart-bar-demo.js')
     
     //- Load Simple DataTables Scripts
-    script(src='https://cdn.jsdelivr.net/npm/simple-datatables@latest', crossorigin='anonymous')
+    script(src='https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js', crossorigin='anonymous')
     script(src='js/datatables-simple-demo.js')
