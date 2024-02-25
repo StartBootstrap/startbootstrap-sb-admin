@@ -8,7 +8,7 @@ block config
     
 prepend css
     //- Load Simple DataTables Stylesheet
-    link(href='https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css', rel='stylesheet')
+    link(href='https://cdn.jsdelivr.net/npm/simple-datatables@9.0.0/dist/style.min.css', rel='stylesheet')
 
 block content
     .container-fluid.px-4
@@ -78,10 +78,12 @@ block content
 
 append scripts
     //- Load Chart.js and demos
-    script(src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js', crossorigin='anonymous')
+    script(src='https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js', crossorigin='anonymous')
+    script(src='https://cdn.jsdelivr.net/npm/luxon@^3', crossorigin='anonymous')
+    script(src='https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@^1', crossorigin='anonymous')
     script(src='assets/demo/chart-area-demo.js')
     script(src='assets/demo/chart-bar-demo.js')
-    
+
     //- Load Simple DataTables Scripts
-    script(src='https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js', crossorigin='anonymous')
+    script(src='https://cdn.jsdelivr.net/npm/simple-datatables@9.0.0/dist/umd/simple-datatables.min.js', crossorigin='anonymous')
     script(src='js/datatables-simple-demo.js')

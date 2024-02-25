@@ -75,35 +75,48 @@
     @extend .page-item;
 }
 
-.datatable-pagination a {
+.datatable-pagination a,
+.datatable-pagination button {
     @extend .page-link;
 }
 
-.datatable-pagination a:hover {
+.datatable-pagination a:hover,
+.datatable-pagination button:hover {
     background-color: $pagination-hover-bg;
 }
 
 .datatable-pagination .active a,
 .datatable-pagination .active a:focus,
-.datatable-pagination .active a:hover {
+.datatable-pagination .active a:hover,
+.datatable-pagination .active button,
+.datatable-pagination .active button:focus,
+.datatable-pagination .active button:hover {
     background-color: $pagination-active-bg;
 }
 
 .datatable-pagination .ellipsis a,
 .datatable-pagination .disabled a,
 .datatable-pagination .disabled a:focus,
-.datatable-pagination .disabled a:hover {
+.datatable-pagination .disabled a:hover,
+.datatable-pagination .ellipsis button,
+.datatable-pagination .disabled button,
+.datatable-pagination .disabled button:focus,
+.datatable-pagination .disabled button:hover {
     cursor: not-allowed;
 }
 
 .datatable-pagination .disabled a,
 .datatable-pagination .disabled a:focus,
-.datatable-pagination .disabled a:hover {
+.datatable-pagination .disabled a:hover,
+.datatable-pagination .disabled button,
+.datatable-pagination .disabled button:focus,
+.datatable-pagination .disabled button:hover {
     cursor: not-allowed;
     opacity: 0.4;
 }
 
-.datatable-pagination .pager a {
+.datatable-pagination .pager a,
+.datatable-pagination .pager button {
     font-weight: bold;
 }
 

@@ -1,7 +1,7 @@
 {
     "title": "SB Admin",
     "name": "startbootstrap-sb-admin",
-    "version": "7.0.7",
+    "version": "8.0.0",
     "scripts": {
         "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
         "build:assets": "node scripts/build-assets.js",
@@ -12,7 +12,7 @@
         "start": "npm run build && node scripts/start.js",
         "start:debug": "npm run build && node scripts/start-debug.js"
     },
-    "description": "A free admin dashboard template based on Bootstrap 4, created by Start Bootstrap.",
+    "description": "A free admin dashboard template based on Bootstrap 5, created by Start Bootstrap.",
     "keywords": [
         "css",
         "sass",
@@ -39,17 +39,17 @@
         "url": "https://github.com/StartBootstrap/startbootstrap-sb-admin.git"
     },
     "dependencies": {
-        "bootstrap": "5.2.3"
+        "bootstrap": "5.3.3"
     },
     "devDependencies": {
-        "autoprefixer": "10.4.14",
-        "browser-sync": "2.29.1",
-        "chokidar": "3.5.3",
-        "concurrently": "6.3.0",
-        "postcss": "8.4.21",
-        "prettier": "2.8.6",
+        "autoprefixer": "10.4.17",
+        "browser-sync": "3.0.2",
+        "chokidar": "3.6.0",
+        "concurrently": "8.2.2",
+        "postcss": "8.4.35",
+        "prettier": "^3.2.5",
         "pug": "3.0.2",
-        "sass": "1.60.0",
+        "sass": "1.71.1",
         "shelljs": "0.8.5",
         "upath": "2.0.1"
     }
