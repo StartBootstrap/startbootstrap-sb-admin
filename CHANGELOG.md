@@ -27,6 +27,7 @@ v20.11.1
       * As a result, had to update `scripts/render-pug.js` to change the `renderPug` function to an async function.
         * Also, has to modify the 'prettified' const to be await.
     * Updated `sass` to 1.71.1
+  * Updated `scripts/render-scss.js` to replace legacy `sass.renderSync` with `sass.compileString`.
   * Updated scripts and css for `simple-datatables` to 9.0.0
     * Updated main css as well, as a result. The `.datatable-pagination` had to be updated throughout to include `button`, which was a change made in `simple-datatables` >8.0
   * Updated `Charts.js` to 4.4.1

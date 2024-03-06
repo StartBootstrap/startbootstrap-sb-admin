@@ -9,17 +9,18 @@ const sh = require('shelljs');
 
 const stylesPath = '../src/scss/styles.scss';
 const destPath = upath.resolve(upath.dirname(__filename), '../dist/css/styles.css');
+const loadPaths = upath.resolve(upath.dirname(__filename), '../node_modules');
 
 module.exports = function renderSCSS() {
 
-    const results = sass.renderSync({
-        data: entryPoint,
-        includePaths: [
-            upath.resolve(upath.dirname(__filename), '../node_modules')
+    const results = sass.compileString(entryPoint, {
+        loadPaths: [
+            loadPaths
         ],
-      });
+    });
 
     const destPathDirname = upath.dirname(destPath);
+
     if (!sh.test('-e', destPathDirname)) {
         sh.mkdir('-p', destPathDirname);
     }
@@ -39,4 +40,4 @@ const entryPoint = `/*!
 * Licensed under ${packageJSON.license} (https://github.com/StartBootstrap/${packageJSON.name}/blob/master/LICENSE)
 */
 @import "${stylesPath}"
-`
+`;
